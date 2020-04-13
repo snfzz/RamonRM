@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".yinhuan.YinHuanTXXXActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_yinhuantxxx_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_yinhuantxxx_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="填写信息"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:text="填写信息"
+        android:textColor="@color/colorTitleHint"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="产         品:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_yinhuantxxx_cp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:gravity="center"
+            android:textColor="@color/colorTitle"
+            android:text="镭目塞棒控制"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="镭目设备:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_yinhuantxxx_lmsb"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="可选项"
+            android:background="@drawable/edittext_rectbackground"
+            android:gravity="center"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="等         级:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_yinhuantxxx_dj"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:gravity="center"
+            android:text="一般隐患"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="标         题:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/activity_yinhuantxxx_bt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:gravity="center"
+            android:text="新增隐患"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="内         容:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_yinhuantxxx_txtcontent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/activity_workmsgedit_lblcontenttitle"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittext_rectbackground"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorTitle"
+        android:textColorHint="@color/colorTitleHint"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="备         注:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_yinhuantxxx_txtbj"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/activity_workmsgedit_lblcontenttitle"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edittext_rectbackground"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorTitle"
+        android:textColorHint="@color/colorTitleHint"
+        android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传图片"
+                android:textColor="@color/colorUnSelected"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/activity_yinhuandengji_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="17dp"
+                android:src="@mipmap/add"
+                />
+
+        </LinearLayout>
+
+        <com.ramon.ramonrm.newlistview.ProjectPlanGridView
+            android:id="@+id/activity_yinhuantxxx_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:numColumns="3"
+            />
+
+        <Button
+            android:id="@+id/activity_yinhuantxxx_bc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/button_selector_pressed"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

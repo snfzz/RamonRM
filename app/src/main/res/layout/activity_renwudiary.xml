@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".renyuan.RenWuDiaryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_renwudiary_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_renwudiary_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="工作日志"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_renwudiary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="5dp"
+        android:text="*undefined-undefined"
+        android:textColor="@color/colorTitleHint"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="工        时:"
+            android:textSize="18dp"
+            android:textColor="#2D90C5"
+            android:layout_marginLeft="3dp"
+            />
+
+        <EditText
+            android:id="@+id/activity_renwudiary_gs"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:cursorVisible="false"
+            android:inputType="text"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="等待工时:"
+            android:textSize="18dp"
+            android:textColor="#2D90C5"
+            android:layout_marginLeft="3dp"
+            />
+
+        <EditText
+            android:id="@+id/activity_renwudiary_ddgs"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:cursorVisible="false"
+            android:inputType="text"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorTitle"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="等待原因:"
+            android:textSize="18dp"
+            android:textColor="#2D90C5"
+            android:layout_marginLeft="3dp"
+            />
+
+        <EditText
+            android:id="@+id/activity_renwudiary_ddyy"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:cursorVisible="false"
+            android:inputType="text"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:gravity="start"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_height="26dp"
+                android:layout_width="26dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="3dp"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="问题反馈:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_marginLeft="3dp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/activity_renwudiary_wtfk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:gravity="start"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_height="26dp"
+                android:layout_width="26dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="3dp"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="工作内容:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_marginLeft="3dp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/activity_renwudiary_gznr"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:gravity="start"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/activity_renwudiary_save"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/button_selector"
+        android:layout_marginTop="25dp"
+        android:text="保存日志"
+        android:textColor="@color/colorTitle"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+
+</LinearLayout>

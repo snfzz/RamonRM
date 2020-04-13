@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="string"/>
+    <attr name="src" format="reference"/>
+
+    <declare-styleable name="HomeMenuItem"> <!-- 这个Name需要跟你的自定义View的名称一致哦 -->
+        <attr name="title" /> <!-- 属性的名称以及值，这里属性的名称为title其值只能为String -->
+        <attr name="selected_src" format="reference"/>
+        <attr name="src" />
+        <attr name="ischecked" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="MineMenuItem">
+        <attr name="title"/>
+        <attr name="src" />
+    </declare-styleable>
+</resources>

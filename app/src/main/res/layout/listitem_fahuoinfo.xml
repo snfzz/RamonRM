@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblshrinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="姓名 - 手机号"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_fahuo_lyshouhuodw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblshouhuodwtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="收货单位："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblshouhuodw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_fahuo_lblshouhuodwtitle"
+            android:textColor="@color/colorTitle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_fahuo_lyshouhuodz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblshouhuodztitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="收货地址："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblshouhuodz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_fahuo_lblshouhuodztitle"
+            android:textColor="@color/colorTitle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_fahuo_lyfahuofs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblfahuofstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="发货方式："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblfahuofs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_fahuo_lblfahuofstitle"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_fahuo_lykuaididh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblkuaididhtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="发货单号："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblkuaididh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_fahuo_lblkuaididhtitle"
+            android:cursorVisible="true"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_fahuo_lybaozhuangfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblbaozhuangfstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="包装方式："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblbaozhuangfs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_fahuo_lblbaozhuangfstitle"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_fahuo_lybz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblbztitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="备注信息："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblbz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_fahuo_lblbztitle"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/listitem_fahuo_lblline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/listitem_fahuo_lblbz"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+    </RelativeLayout>
+</LinearLayout>

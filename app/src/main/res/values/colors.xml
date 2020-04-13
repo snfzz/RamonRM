@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dashline_color">#C2C0C2</color>
+    <color name="colorTitle">#FFFFFF</color>
+    <color name="colorSelected">#4989BE</color>
+    <color name="colorUnSelected">#848484</color>
+    <color name="colorMain">#03A9F4</color>
+    <color name="colorPrimaryGray">#2C2C2C</color>
+    <color name="colorTitleHint">#C2C0C2</color>
+    <color name="colorTitleMain">#4F94CD</color>
+    <color name="colorStatusNormal">#71C671</color>
+    <color name="colorStatusError">#DC143C</color>
+    <color name="colorBackground">#2C2C2C</color>
+    <color name="colorNone">#00FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

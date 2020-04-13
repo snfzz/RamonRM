@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".project.XinXiTianXieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_xinxitianxie_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_xinxitianxie_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="信息填写"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/activity_planshenhe_lbltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请详情"
+            android:textColor="@color/colorUnSelected"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="3dp"
+            android:src="@mipmap/name" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="实际开始:"
+            android:textColor="@color/colorMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_xinxitianxie_bngtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2020-01-01"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="3dp"
+            android:src="@mipmap/name" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="实际结束:"
+            android:textColor="@color/colorMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_xinxitianxie_overtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2020-01-01"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="3dp"
+            android:src="@mipmap/name" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="完成说明:"
+            android:textColor="@color/colorMain"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/activity_xinxitianxie_txtconfpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/activity_xinxitianxie_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片选择"
+            android:textColor="@color/colorUnSelected"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/activity_xinxitianxie_selectphoto"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/add"
+            />
+    </LinearLayout>
+
+    <com.ramon.ramonrm.newlistview.ProjectPlanGridView
+        android:id="@+id/activity_xinxitianxie_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+         />
+
+
+    <Button
+        android:id="@+id/activity_xinxitianxie_btnok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_selector_pressed"
+        android:text="提交"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

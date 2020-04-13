@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_workmsgedit_lymain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_workmsgedit_imgsave"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@mipmap/save" />
+
+        <ImageButton
+            android:id="@+id/activity_workmsgedit_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="编写短信"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_workmsgedit_rlaytask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/activity_workmsgedit_imgtask"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/name" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lbltasktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_workmsgedit_imgtask"
+            android:text="任务名称："
+            android:textColor="@color/colorSelected"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_workmsgedit_txttask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/activity_workmsgedit_lbltasktitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_workmsgedit_rlaytype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/activity_workmsgedit_imgtype"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/name" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lbltypetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_workmsgedit_imgtype"
+            android:text="任务类别："
+            android:textColor="@color/colorSelected"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lbltype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/activity_workmsgedit_lbltypetitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_workmsgedit_rlaymobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/activity_workmsgedit_imgmobile"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/name" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lblmobiletitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_workmsgedit_imgmobile"
+            android:text="联系方式："
+            android:textColor="@color/colorSelected"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_workmsgedit_txtmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/activity_workmsgedit_lblmobiletitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_workmsgedit_rlaydidian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/activity_workmsgedit_imgdidian"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/name" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lbldidiantitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_workmsgedit_imgdidian"
+            android:text="工作地点："
+            android:textColor="@color/colorSelected"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lbldidian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/activity_workmsgedit_lbldidiantitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_workmsgedit_rlaycontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="45dp">
+
+        <ImageView
+            android:id="@+id/activity_workmsgedit_imgcontent"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="2dp"
+            app:srcCompat="@mipmap/name" />
+
+        <TextView
+            android:id="@+id/activity_workmsgedit_lblcontenttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_workmsgedit_imgcontent"
+            android:text="短信内容："
+            android:textColor="@color/colorSelected"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_workmsgedit_txtcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_workmsgedit_lblcontenttitle"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_workmsgedit_rlaybutton"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/activity_workmsgedit_btnsave"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_selector_pressed"
+            android:text="保  存"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</LinearLayout>

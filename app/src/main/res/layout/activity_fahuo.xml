@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_fahuo_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_fahuo_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="发货管理"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/activity_fahuo_lbltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="发货管理"
+            android:textColor="@color/colorUnSelected"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_fahuo_imgfilter"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            app:srcCompat="@mipmap/shaixuan" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_fahuo_rlaycondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rect_background"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/activity_fahuo_rlaysqrname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/activity_fahuo_lblsqrnametitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申  请  人："
+                android:textColor="@color/colorSelected"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_fahuo_txtsqrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/activity_fahuo_lblsqrnametitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/colorTitle"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_fahuo_rlayshrname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/activity_fahuo_lblshrnametitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收  货  人："
+                android:textColor="@color/colorSelected"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_fahuo_txtshrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/activity_fahuo_lblshrnametitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/colorTitle"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_fahuo_rlaybegindate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/activity_fahuo_lblbegindatetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始日期："
+                android:textColor="@color/colorSelected"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_fahuo_lblbegindate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/activity_fahuo_lblbegindatetitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:text="2020-02-20"
+                android:textColor="@color/colorTitle"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_fahuo_rlayenddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/activity_fahuo_lblenddatetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束日期："
+                android:textColor="@color/colorSelected"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_fahuo_lblenddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/activity_fahuo_lblenddatetitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:text="2020-02-21"
+                android:textColor="@color/colorTitle"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_fahuo_rlaybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/activity_fahuo_btnquery"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_selector_pressed"
+                android:text="查  询"
+                android:textColor="@color/colorTitle"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_fahuo_lvfahuosq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rect_background" />
+
+</LinearLayout>

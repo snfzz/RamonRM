@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_anzhuangproject_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_anzhuangproject_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="安装任务"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rect_background">
+
+        <ImageView
+            android:id="@+id/activity_anzhuangproject_imgdropdown"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@mipmap/down" />
+
+        <EditText
+            android:id="@+id/activity_anzhuangproject_txtmingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_toStartOf="@+id/activity_anzhuangproject_btnsearch"
+            android:layout_toEndOf="@+id/activity_anzhuangproject_imgdropdown"
+            android:background="@color/colorPrimaryGray"
+            android:ems="10"
+            android:hint="请输入关键字"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/activity_anzhuangproject_btnsearch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@mipmap/search" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_anzhuangproject_lvtask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="60dp"
+        android:scrollbars="vertical"></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-60dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_anzhuangproject_mitemqyzp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/qyzp"
+                app:src="@mipmap/qyzp"
+                app:title="区域指派">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_anzhuangproject_mitemryzp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/ryzp"
+                app:src="@mipmap/ryzp"
+                app:title="人员指派">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_anzhuangproject_mitemjdgz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/jdgz"
+                app:src="@mipmap/jdgz"
+                app:title="进度跟踪">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_anzhuangproject_mitemrwsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/wjlb"
+                app:src="@mipmap/wjlb"
+                app:title="任务审核">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_anzhuangproject_mitemmine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/gzrz"
+                app:src="@mipmap/gzrz"
+                app:title="任务日志">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

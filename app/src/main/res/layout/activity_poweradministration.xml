@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0c0c0c"
+    android:orientation="vertical"
+    tools:context=".renyuan.PowerAdministrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/activity_poweradministration_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_poweradministration_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="权限管理"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_poweradministration_yhsh"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/yhsh"
+
+                />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="用户审核"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="60dp"
+                android:src="@mipmap/right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_poweradministration_qxsh"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/azrw"
+                />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="权限审核"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="60dp"
+                android:src="@mipmap/right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_poweradministration_qxsq"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/gzrz"
+
+                />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="权限申请"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="60dp"
+                android:src="@mipmap/right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_poweradministration_qxck"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/whjl"
+
+                />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="权限查看"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="60dp"
+                android:src="@mipmap/right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

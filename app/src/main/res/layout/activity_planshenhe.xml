@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_planshenhe_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_planshenhe_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="申请审核"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/activity_planshenhe_lbltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请详情"
+            android:textColor="@color/colorUnSelected"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.ramon.ramonrm.controls.RMScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblhthtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申  请  人："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblsqr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblhthtitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblsqtimetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblhthtitle"
+                android:layout_marginTop="10dp"
+                android:text="申请时间："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblsqtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblhthtitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblhthtitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblsqnametitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblsqtimetitle"
+                android:layout_marginTop="10dp"
+                android:text="申请节点："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblsqname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblsqtimetitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblsqtimetitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblhthititle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblsqname"
+                android:layout_marginTop="10dp"
+                android:text="合  同  号："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblhth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblsqnametitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblsqnametitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblkehumctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblhthititle"
+                android:layout_marginTop="10dp"
+                android:text="客户名称："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblkehumc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblhthititle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblhthititle"
+                android:textColor="@color/colorTitle" />
+            <TextView
+                android:id="@+id/activity_planshenhe_lblquyutitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblkehumctitle"
+                android:layout_marginTop="10dp"
+                android:text="区域名称："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblquyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblkehumctitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblkehumctitle"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblneirongtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblquyutitle"
+                android:layout_marginTop="10dp"
+                android:text="详细内容："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblneirong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblquyutitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblquyutitle"
+                android:maxLines="8"
+                android:minLines="1"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lbladtrsttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblneirong"
+                android:layout_marginTop="10dp"
+                android:text="审核结果："
+                android:textColor="@color/colorTitleMain" />
+            <TextView
+                android:id="@+id/activity_planshenhe_lbladtrst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblneirong"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblneirongtitle"
+                android:maxLines="8"
+                android:minLines="1"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lbladtcontenttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lbladtrsttitle"
+                android:layout_marginTop="10dp"
+                android:text="审核意见："
+                android:textColor="@color/colorTitleMain" />
+            <TextView
+                android:id="@+id/activity_planshenhe_lbladtcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lbladtrsttitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lbladtrsttitle"
+                android:maxLines="8"
+                android:minLines="1"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblreadtrsttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lbladtcontenttitle"
+                android:layout_marginTop="10dp"
+                android:text="复审结果："
+                android:textColor="@color/colorTitleMain" />
+            <TextView
+                android:id="@+id/activity_planshenhe_lblreadtrst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lbladtcontenttitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lbladtcontenttitle"
+                android:maxLines="8"
+                android:minLines="1"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblreadtcontenttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblreadtrsttitle"
+                android:layout_marginTop="10dp"
+                android:text="复审意见："
+                android:textColor="@color/colorTitleMain" />
+            <TextView
+                android:id="@+id/activity_planshenhe_lblreadtcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblreadtrsttitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblreadtrsttitle"
+                android:maxLines="8"
+                android:minLines="1"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblcontenttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblreadtcontenttitle"
+                android:layout_marginTop="10dp"
+                android:text="审核意见："
+                android:textColor="@color/colorTitleMain" />
+
+            <EditText
+                android:id="@+id/activity_planshenhe_txtcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_lblreadtcontenttitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/activity_planshenhe_lblcontenttitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="5"
+                android:minLines="1"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/activity_planshenhe_lblimagetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_planshenhe_txtcontent"
+                android:layout_marginTop="10dp"
+                android:text="节点照片："
+                android:textColor="@color/colorTitleMain" />
+
+            <GridView
+                android:id="@+id/activity_planshenhe_gvimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:layout_below="@id/activity_planshenhe_lblimagetitle" />
+
+            <Button
+                android:id="@+id/activity_planshenhe_btntongguo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_planshenhe_gvimage"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector_pressed"
+                android:text="通过"
+                android:textColor="@color/colorTitle"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/activity_planshenhe_btntuihui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_planshenhe_btntongguo"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_return_selector"
+                android:text="退回"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </com.ramon.ramonrm.controls.RMScrollView>
+</LinearLayout>

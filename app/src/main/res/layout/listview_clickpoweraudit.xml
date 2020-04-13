@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#34807777"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/listview_useraudit_l3"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/listview_clickpoweraudit_department"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="xx"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/listview_useraudit_l3"
+            android:layout_toLeftOf="@+id/listview_useraudit_l4"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/listview_clickpoweraudit_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="xx"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listview_useraudit_l4"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <CheckBox
+                android:id="@+id/listview_clickpoweraudit_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:checked="true"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:textSize="0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

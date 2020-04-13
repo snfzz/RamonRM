@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="200"
+    android:exitFadeDuration="200"
+    >
+    <!--用于listview点击后切换颜色 -->
+    <item android:color="@color/colorMain" android:state_selected="true"></item>
+    <item android:color="#ffffff" android:state_selected="false"></item>
+</selector>

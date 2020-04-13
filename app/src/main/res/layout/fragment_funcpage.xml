@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    android:id="@+id/fragment_funcpage_linearlayout">
+
+    <RelativeLayout
+        android:id="@+id/fragment_funcpage_relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/fragment_funcpage_rcgz"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 日常工作"
+                android:textColor="#03A9F4"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/fragment_funcpage_rcgz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <GridView
+                android:id="@+id/fragment_funcpage_gridviewrcgz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:columnWidth="30dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_funcpage_relativeLayout2"
+        android:layout_below="@+id/fragment_funcpage_relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/fragment_funcpage_cygj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 常用工具"
+                android:textColor="#03A9F4"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/fragment_funcpage_cygj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <GridView
+                android:id="@+id/fragment_funcpage_gridviewcygj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:columnWidth="30dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

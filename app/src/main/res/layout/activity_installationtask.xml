@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".project.fragment.InstallationTaskActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_installationtask_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_installationtask_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_installationtask_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="安装任务"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_installationtask_r2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/activity_installationtask_r1"
+        android:background="@color/colorBackground">
+
+        <ImageView
+            android:id="@+id/activity_installationtask_down"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@mipmap/down" />
+
+
+        <EditText
+            android:id="@+id/activity_installationtask_mingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/activity_installationtask_down"
+            android:background="@color/colorPrimaryGray"
+            android:ems="10"
+            android:hint="请输入搜索关键字"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/activity_installationtask_btnsearch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@mipmap/search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_installationtask_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_installationtask_bottom"
+        android:layout_below="@+id/activity_installationtask_r2"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/activity_installationtask_bottom"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBackground"
+        >
+
+        <GridView
+            android:id="@+id/activity_installationtask_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:background="@color/colorBackground"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

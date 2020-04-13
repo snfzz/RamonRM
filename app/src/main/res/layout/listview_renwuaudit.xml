@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="申  请  人:"
+                android:textSize="16dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+
+                />
+
+            <TextView
+                android:id="@+id/listview_rentuaudit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColorHint="@color/colorTitleHint"
+                android:layout_marginLeft="1dp"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="申请时间:"
+                android:textSize="16dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/listview_rentuaudit_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="15dp"
+                android:layout_marginLeft="1dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="申请节点:"
+                android:textSize="16dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/listview_rentuaudit_jiedian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="15dp"
+                android:layout_marginLeft="1dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="合  同  号:"
+                android:textSize="16dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/listview_rentuaudit_hth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="15dp"
+                android:layout_marginLeft="1dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="客户名称:"
+                android:textSize="16dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/listview_rentuaudit_khname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitle"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="15dp"
+                android:layout_marginLeft="1dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/listview_rentuaudit_audit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/button_selector"
+            android:layout_marginTop="5dp"
+            android:text="审核"
+            android:textColor="@color/colorTitle"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

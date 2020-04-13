@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/LL_this"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/installationtask_dalog"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:shrinkColumns="1">
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择区域:"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_renyuananpaiadd_xzqy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:text="点击选择"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择人员:"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_renyuananpaiadd_xzry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:text="点击选择"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务类型:"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_renyuananpaiadd_rwlx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:text="钳工"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="主负责人:"
+                        android:textColor="@color/colorTitleMain"
+                        android:layout_gravity="center"
+                        android:textSize="15dp" />
+
+                    <RadioGroup
+                        android:id="@+id/showdalog_renyuananpaiadd_group"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/showdalog_renyuananpaiadd_groupis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是"
+                            android:checked="true"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/showdalog_renyuananpaiadd_groupno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否"
+                            />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="要求到达:"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_renyuananpaiadd_begtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2020-01-01"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="要求完成:"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_renyuananpaiadd_overtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2020-01-01"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+            </TableRow>
+
+            <Button
+                android:id="@+id/showdalog_renyuananpaiadd_qdzp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button_selector"
+                android:text="确定指派"
+                android:textColor="@color/colorTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/showdalog_renyuananpaiadd_miss"
+        android:layout_width="26sp"
+        android:layout_height="26sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/close" />
+
+
+</RelativeLayout>

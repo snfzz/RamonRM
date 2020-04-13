@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/showdalog_ying_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/installationtask_dalog"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:shrinkColumns="1">
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索内容:"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/showdalog_yinhuandengji_ssnr"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:hint="请输入名称"
+                        android:gravity="center"
+                        android:textColor="@color/colorTitle"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="隐患状态:"
+                        android:textColor="@color/colorTitleMain"
+                        android:layout_gravity="center"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_yinhuandengji_yhzt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:text="处理中"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间:"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_yinhuandengji_begtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:text="xxxxx"
+                        android:gravity="center"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间:"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTitleMain"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/showdalog_yinhuandengji_endtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/edittext_rectbackground"
+                        android:text="xxxxx"
+                        android:textColor="@color/colorTitle"
+                        android:textColorHint="@color/colorTitleHint"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/showdalog_renyuananpaiadd_qdzp"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector"
+            android:text="确认搜索"
+            android:textSize="15dp"
+            android:textColor="@color/colorTitle"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/showdalog_yinhuandengji_miss"
+        android:layout_width="26sp"
+        android:layout_height="26sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/close" />
+
+
+</RelativeLayout>

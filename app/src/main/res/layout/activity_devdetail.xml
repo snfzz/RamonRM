@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_devdetail_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_devdetail_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="设备详细"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rect_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_devdetail_kehumc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorTitleMain"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_devdetail_shebeimc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorTitleMain"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.ramon.ramonrm.controls.RMScrollView
+        android:id="@+id/activity_devdetail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rect_background">
+
+                <ImageView
+                    android:id="@+id/activity_devdetail_imgtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rect_background">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/activity_devdetail_tablay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rect_background"
+                    app:tabGravity="center"
+                    app:tabIndicatorColor="@color/colorTitleMain"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="3dp"
+                    app:tabPaddingStart="3dp"
+                    app:tabSelectedTextColor="#4f94cd"
+                    app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:tabTextColor="#FFFFFF"></com.google.android.material.tabs.TabLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/activity_devdetail_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="910dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rect_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/zxjc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:text="报警数据"
+                        android:textColor="#1099D5" />
+
+                    <TextView
+                        android:id="@+id/avtivity_devdetail_lblalarmdetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:text="查询更多>>  "
+                        android:textAlignment="viewEnd"
+                        android:textColor="#1099D5"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.ramon.ramonrm.controls.RMListView
+                    android:id="@+id/activity_devdetail_lvalarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.ramon.ramonrm.controls.RMScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-60dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_devdetail_mitemhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/djjl"
+                app:src="@mipmap/djjl"
+                app:title="点检记录">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_devdetail_mitemfunc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/whjl"
+                app:src="@mipmap/whjl"
+                app:title="维护记录">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_devdetail_mitemdev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/gzsb"
+                app:src="@mipmap/gzsb"
+                app:title="故障上报">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_devdetail_mitemmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/beijxx"
+                app:src="@mipmap/beijxx"
+                app:title="备件记录">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_devdetail_mitemmine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="true"
+                app:selected_src="@mipmap/jszc"
+                app:src="@mipmap/jszc"
+                app:title="技术支持">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

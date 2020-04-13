@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ramon.ramonrm">
+    <!-- iBeancon功能所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 个推3.0电子围栏功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".LIMSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SaiBangTJ.LiuFragment.SBTJChartLiuFragment"></activity>
+        <activity android:name=".SaiBangTJ.SaiBangTJBarChartActivity" />
+        <activity android:name=".SaiBangTJ.SaiBangTJActivity" />
+        <activity android:name=".yinhuan.YinHuanTxxxWriteActivity" />
+        <activity android:name=".yinhuan.YinHuanTXXXActivity" />
+        <activity android:name=".yinhuan.YinHuanCKXXActivity" />
+        <activity android:name=".renyuan.YinHuanDengJiActivity" />
+        <activity android:name=".renyuan.FunctionalCollection" />
+        <activity android:name=".weihuproject.WeiHuProjectActivity" />
+        <activity android:name=".project.XinXiTianXieActivity" />
+        <activity android:name=".renyuan.RenWuDiaryActivity" />
+        <activity android:name=".project.fragment.InstallationTaskActivity" />
+        <activity android:name=".project.ShenQingXiangXiActivity" />
+        <activity android:name=".project.RenWuAuditActivity" />
+        <activity android:name=".renyuan.PowerAdministrationActivity" />
+        <activity android:name=".renyuan.BeiJianXiangXiActivity" />
+        <activity android:name=".renyuan.BeiJianGuanliActivity" />
+        <activity android:name=".home.fragment.WoringProductActivity" />
+        <activity android:name=".user.SeePowerActivity" />
+        <activity android:name=".user.PowerApplyActivity" />
+        <activity android:name=".user.ClickPowerAuditActivity" />
+        <activity android:name=".user.QuanXianSHActivity" />
+
+        <provider
+            android:name=".RMFileProvider"
+            android:authorities="com.ramon.ramonrm.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 指定Uri的共享路径 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="PhotoPicker"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/photo_path" />
+        </provider>
+
+        <activity
+            android:name=".video.CallingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".fahuo.FaHuoActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".video.VideoCallActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".renyuan.WorkMsgEditActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".device.DevDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".alarm.AnLiKuActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".alarm.AnLiDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".video.JiShuZCActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".renyuan.KaoQinDKActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".renyuan.WorkMsgActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".home.AboutActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".user.PasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".user.RegUserActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".user.AuditUserActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".user.AuditUserDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".user.QuanXianSQActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".project.AnZhuangProjectActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".project.ProjectDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".project.PlanShenHeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".device.HistoryViewActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vHkveHLy3GY3bhmQsN7sncU25Uet56ku" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service
+            android:name=".RMPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home.LoginActivity" />
+    </application>
+
+</manifest>

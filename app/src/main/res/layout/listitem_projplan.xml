@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/listitem_projplan_lymain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/listitem_projplan_lybutton"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/listitem_projplan_imgdown"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/listitem_projplan_lblplanzttitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="5dp"
+                app:srcCompat="@mipmap/dropclosed" />
+
+            <TextView
+                android:id="@+id/listitem_projplan_lblplanmctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="任务名称："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_projplan_lblplanmc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toStartOf="@+id/listitem_projplan_imghelp"
+                android:layout_toEndOf="@+id/listitem_projplan_lblplanmctitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+            <ImageView
+                android:id="@+id/listitem_projplan_imghelp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                app:srcCompat="@mipmap/wenhao" />
+
+            <TextView
+                android:id="@+id/listitem_projplan_lblplanzttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listitem_projplan_lblplanmctitle"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:text="任务状态："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_projplan_lblplanzt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listitem_projplan_lblplanmctitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_projplan_lblplanzttitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+            <TextView
+                android:id="@+id/listitem_projplan_lblplanfiletitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listitem_projplan_lblplanzttitle"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:text="文件数量："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_projplan_lblplanfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listitem_projplan_lblplanzttitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_toStartOf="@+id/listitem_projplan_imgdown"
+                android:layout_toEndOf="@+id/listitem_projplan_lblplanfiletitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_projplan_lybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/listitem_projplan_btnsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_pressed"
+                android:text="提交节点"
+                android:textColor="@color/colorTitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.ramon.ramonrm.newlistview.ProjectPlanGridView
+        android:id="@+id/listitem_projplan_gridimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/listitem_projplan_lblline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTitleHint" />
+
+</LinearLayout>

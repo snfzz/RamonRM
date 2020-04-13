@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".user.PowerApplyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_powerapply_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_powerapply_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="权限申请"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_powerapply_ts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:text="*当前搜索类别为客户，点击箭头切换"
+        android:textColor="@color/colorTitleHint"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="   搜索内容"
+        android:textColor="@color/colorMain"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rect_background">
+
+        <ImageView
+            android:id="@+id/activity_powerapply_down"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@mipmap/down" />
+
+
+        <EditText
+            android:id="@+id/activity_powerapply_mingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/activity_powerapply_down"
+            android:background="@color/colorPrimaryGray"
+            android:ems="10"
+            android:hint="请输入用户"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/activity_powerapply_btnsearch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@mipmap/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_powerapply_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#34807777"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        >
+
+        <LinearLayout
+            android:id="@+id/listview_useraudit_l1"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="类型"
+                android:textSize="15dp"
+                android:textColor="#2D90C5"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/listview_useraudit_l1"
+            android:layout_toLeftOf="@+id/listview_useraudit_l2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="名称"
+                android:textSize="15dp"
+                android:textColor="#2D90C5"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listview_useraudit_l2"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="操作"
+                android:textColor="#2D90C5"
+                android:src="@mipmap/add"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_powerapply_listview1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <TextView
+        android:id="@+id/yxnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="   已选内容"
+        android:textColor="@color/colorMain"
+        android:visibility="invisible"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/activity_powerapply_r2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#34807777"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        >
+
+        <LinearLayout
+            android:id="@+id/listview_useraudit_l12"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="类型"
+                android:textSize="15dp"
+                android:textColor="#2D90C5"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/listview_useraudit_l12"
+            android:layout_toLeftOf="@+id/listview_useraudit_l22"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="名称"
+                android:textSize="15dp"
+                android:textColor="#2D90C5"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listview_useraudit_l22"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="操作"
+                android:textColor="#2D90C5"
+                android:src="@mipmap/add"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/activity_powerapply_listview2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:clipChildren="false"
+        />
+
+    <Button
+        android:id="@+id/activity_powerapply_submission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:text="提交"
+        android:textColor="@color/colorTitle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

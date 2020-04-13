@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_historyview_rlayshebei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_background">
+
+            <ImageButton
+                android:id="@+id/activity_historyview_imgback"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="15dp"
+                android:src="@mipmap/fanhui" />
+
+            <TextView
+                android:id="@+id/activity_historyview_lblkehumc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/activity_historyview_imgback"
+                android:text="柳钢"
+                android:textColor="@color/colorTitleMain"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_historyview_lblshebeimc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/activity_historyview_lblkehumc"
+                android:text="5#机3流铯源塞棒"
+                android:textColor="@color/colorTitleMain"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_historyview_rlaycondition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/rect_background">
+
+            <TextView
+                android:id="@+id/activity_historyview_lblstrandid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="第一流"
+                android:textColor="@color/colorTitle"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/activity_historyview_imgdropdown"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/activity_historyview_lblstrandid"
+                app:srcCompat="@mipmap/dropdown" />
+
+            <TextView
+                android:id="@+id/activity_historyview_lbldate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/activity_historyview_imgdropdown"
+                android:text="2020-03-06"
+                android:textColor="@color/colorTitle"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/activity_historyview_lbltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/activity_historyview_lbldate"
+                android:text="08:24"
+                android:textColor="@color/colorTitle"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/activity_historyview_imgprev"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/activity_historyview_lbltime"
+                app:srcCompat="@mipmap/prev_history" />
+
+            <ImageView
+                android:id="@+id/activity_historyview_imgquery"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/activity_historyview_imgprev"
+                app:srcCompat="@mipmap/search" />
+
+            <ImageView
+                android:id="@+id/activity_historyview_imgnext"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/activity_historyview_imgquery"
+                app:srcCompat="@mipmap/next_history" />
+
+            <ImageView
+                android:id="@+id/activity_historyview_imgfilter"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/activity_historyview_imgnext"
+                app:srcCompat="@mipmap/shaixuan" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rect_background">
+
+            <LinearLayout
+                android:id="@+id/activity_historyview_lylenged"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/colorTitle" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/colorTitle" />
+            </LinearLayout>
+        </ScrollView>
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/activity_historyview_chartlssj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".renyuan.BeiJianGuanliActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_beijianguanli_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_beijianguanli_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_beijianguanli_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="备件管理"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_beijianguanli_r0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/activity_beijianguanli_r1"
+        android:background="@color/colorBackground">
+
+
+
+
+        <EditText
+            android:id="@+id/activity_beijianguanli_mingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/colorPrimaryGray"
+            android:ems="10"
+            android:hint="请输入搜索关键字"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/activity_beijianguanli_btnsearch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            app:srcCompat="@mipmap/search" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_beijianguanli_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="   常驻钢厂"
+        android:textColor="@color/colorMain"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/activity_beijianguanli_rr1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#2c2c2c"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/activity_changzhugangchang_l1"
+
+            >
+
+            <TextView
+                android:id="@+id/activity_changzhugangchang_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="类型"
+                android:textSize="15dp"
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_changzhugangchang_l1"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="230dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/activity_changzhugangchang_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="名称"
+                android:textSize="15dp"
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_changzhugongchang_listview"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#2c2c2c"
+        />
+
+    <TextView
+        android:id="@+id/activity_beijianguanli_txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:text="   备件清单"
+        android:textColor="@color/colorMain"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/activity_beijianguanli_rr2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#2c2c2c"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        >
+
+        <LinearLayout
+            android:id="@+id/activity_beijianqingdang_l1"
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:layout_width="180dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/activity_beijianqingdang_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="名称"
+                android:textSize="15dp"
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/activity_beijianqingdang_l1"
+            android:layout_toLeftOf="@+id/activity_beijianqingdang_l2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/activity_beijianqingdang_department"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="初期数量"
+                android:textColor="@color/colorMain"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_beijianqingdang_l2"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="130dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/activity_beijianqingdang_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="期末数量"
+                android:textSize="15dp"
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_beijianguanli_listview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#2c2c2c"
+        android:visibility="invisible"
+        />
+
+
+
+</LinearLayout>

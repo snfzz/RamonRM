@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C0C"
+    android:id="@+id/fragment_homepage_scrollview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="175dp" >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fragment_homepage_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="100dp">
+                    <LinearLayout
+                        android:id="@+id/fragment_homepage_viewgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:numColumns="4"
+            android:id="@+id/fragment_homepage_gvfunc"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom"
+            >
+            <RelativeLayout
+                android:id="@+id/fragment_homepage_rysbzl"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="top"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:text="   设备总览"
+                    android:textColor="@color/colorMain"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:background="#19A8A0A0"
+                android:layout_below="@+id/fragment_homepage_rysbzl">
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fragment_homepage_piechart"/>
+<!--                <WebView-->
+<!--                    android:background="#2c2c2c"-->
+<!--                    android:id="@+id/fragment_homepage_webgauge"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="210dp" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom"
+            >
+
+            <RelativeLayout
+                android:id="@+id/fragment_homepage_rycpzl"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:text="   产品总览"
+                    android:textColor="@color/colorMain"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:background="#2C2C2C"
+                android:layout_below="@+id/fragment_homepage_rycpzl">
+                <lecho.lib.hellocharts.view.ComboLineColumnChartView
+                    android:id="@+id/fragment_homepage_chartcpzl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment_homepage_lyalarmgroup"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_homepage_lblcpbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="0"
+                    android:text="产品报警"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/fragment_homgpage_lbljrbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="1"
+                    android:text="今日报警"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/fragment_homepage_lblbzbj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="2"
+                    android:text="本周报警"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_homepage_ryalarmmain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            >
+            <RelativeLayout
+                android:id="@+id/fragment_homepage_ryrygz"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="   人员跟踪"
+                    android:textColor="#03A9F4"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@id/fragment_homepage_ryrygz"
+                tools:ignore="NotSibling">
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/fragment_homepage_homemap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

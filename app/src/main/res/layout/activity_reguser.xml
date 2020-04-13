@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_reguser_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_reguser_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="用户注册"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/activity_reguser_btnreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblemailtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector_pressed"
+            android:text="注册"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lblbaseinfotitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="基本信息"
+            android:textColor="@color/colorMain"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lblxingmingtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblbaseinfotitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="姓    名："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_reguser_txtxingming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblbaseinfotitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/activity_reguser_lblxingmingtitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lblsextitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblxingmingtitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="性    别："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblxingmingtitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/activity_reguser_lblsextitle"
+            android:checkedButton="@id/activity_reguser_rbman"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity_reguser_rbman"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_button"
+                android:text="  男"
+                android:textColor="@color/colorTitle"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/activity_reguser_rbwoman"
+                style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/radiobutton_button"
+                android:checked="false"
+                android:text="  女"
+                android:textColor="@color/colorTitle"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/activity_reguser_lblcardidtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblsextitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="身份证："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_reguser_txtcardid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_reguser_lblsextitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/activity_reguser_lblcardidtitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lblyonghulbtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblcardidtitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="类    别："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblcardidtitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/activity_reguser_lblyonghulbtitle"
+            android:checkedButton="@id/activity_reguser_rbman"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/activity_reguser_rbygyh"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_button"
+                android:checked="true"
+                android:text="  员工用户"
+                android:textColor="@color/colorTitle"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/activity_reguser_rbkhyh"
+                style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton_button"
+                android:text="  客户用户"
+                android:textColor="@color/colorTitle"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/activity_reguser_lbldeptnametitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblyonghulbtitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="部    门："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lbldeptname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lblyonghulbtitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/activity_reguser_lbldeptnametitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lbllxfstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lbldeptnametitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="联系方式"
+            android:textColor="@color/colorMain"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lblphonetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_reguser_lbllxfstitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="手机号："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_reguser_txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_reguser_lbllxfstitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/activity_reguser_lblphonetitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/activity_reguser_lblemailtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_reguser_lblphonetitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="邮    箱："
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_reguser_txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_reguser_lblphonetitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/activity_reguser_lblcardidtitle"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle" />
+    </RelativeLayout>
+</LinearLayout>

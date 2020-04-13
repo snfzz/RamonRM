@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rect_background">
+
+        <ImageView
+            android:id="@+id/dialog_taskloc_imgfactory"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@mipmap/factory" />
+
+        <ImageView
+            android:id="@+id/dialog_taskloc_imgsubmit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@mipmap/submit" />
+
+        <EditText
+            android:id="@+id/dialog_taskloc_txtkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/dialog_taskloc_imgquery"
+            android:layout_toEndOf="@+id/dialog_taskloc_imgfactory"
+            android:background="@drawable/edittext_rectbackground"
+            android:ems="10"
+            android:hint="请输入关键字"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint" />
+
+        <ImageView
+            android:id="@+id/dialog_taskloc_imgquery"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@id/dialog_taskloc_imgsubmit"
+            app:srcCompat="@mipmap/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/rect_background">
+
+        <ListView
+            android:id="@+id/dialog_taskloc_lvfactory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

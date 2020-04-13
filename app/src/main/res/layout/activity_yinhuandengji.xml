@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".renyuan.YinHuanDengJiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_yinhuandengji_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_yinhuandengji_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="隐患登记"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐患信息"
+            android:textColor="@color/colorUnSelected"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/activity_yinhuandengji_write"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/dianping"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/activity_yinhuandengji_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/delete"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/activity_yinhuandengji_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/add"
+            />
+
+        <ImageView
+            android:id="@+id/activity_yinhuandengji_xinxi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/shaixuan"
+            />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_yinhuandengji_listview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/listitem_azhuangtask_lymain">
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lyhth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblhthtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="合  同  号："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblhth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lblhthtitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lykhmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblkhmctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="客户名称："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblkhmc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lblkhmctitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lycpmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblcpmctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="产品名称："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblcpmc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lblcpmctitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle"
+                android:textIsSelectable="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lyqyjl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblqyjltitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="区域经理："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblqyjl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lblqyjltitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lyrwzt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblrwzttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="任务状态："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblrwzt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lblrwzttitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lyjdtj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lbljdtjtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="任务状态："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lbljdtj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lbljdtjtitle"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listitem_anzhuangtask_lyxxnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblxxnrtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="详细内容："
+                android:textColor="@color/colorTitleMain" />
+
+            <TextView
+                android:id="@+id/listitem_anzhuangtask_lblxxnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/listitem_anzhuangtask_lblxxnrtitle"
+                android:maxLines="2"
+                android:minLines="1"
+                android:textColor="@color/colorTitle"
+                android:textIsSelectable="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/listitem_anzhuangtask_lbltodetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看详情>>       "
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorTitleMain" />
+</LinearLayout>

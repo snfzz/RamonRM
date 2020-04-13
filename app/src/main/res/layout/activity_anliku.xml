@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_anliku_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_anliku_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="案例库"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_workmsg_rlaycondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rect_background"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/activity_anliku_rlaychanpinmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/activity_anliku_lblchanpinmctitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品名称："
+                android:textColor="@color/colorSelected"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_anliku_txtchanpinmc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/activity_anliku_lblchanpinmctitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/colorTitle"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_anliku_rlaykeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/activity_anliku_lblkeywordtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关  键  字："
+                android:textColor="@color/colorSelected"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/activity_anliku_txtkeyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/activity_anliku_lblkeywordtitle"
+                android:background="@drawable/edittext_rectbackground"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/colorTitle"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_anliku_rlaybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/activity_anliku_btnquery"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_selector_pressed"
+                android:text="搜    索"
+                android:textColor="@color/colorTitle"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_anliku_lvanliku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="4dp"
+        android:clickable="true" />
+
+</LinearLayout>

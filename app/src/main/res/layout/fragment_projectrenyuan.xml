@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_projectrenyuan_rlayprojinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/fragment_projectrenyuan_lbltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参与人员"
+            android:textColor="@color/colorUnSelected"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/fragment_projectrenyuan_btnadd"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@mipmap/add" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment_projectrenyuan_lvrenyuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" />
+</LinearLayout>

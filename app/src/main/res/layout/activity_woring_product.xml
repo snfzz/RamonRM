@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".home.fragment.WoringProductActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_woringproduct_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_woringproduct_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="镭目云运维"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="   报警产品"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorMain"
+        android:textSize="15dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/activity_woringproduct_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#34807777"
+        android:layout_marginTop="3dp"
+        >
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/activity_woringproduct_l1"
+            >
+
+            <TextView
+                android:id="@+id/activity_woringproduct_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="产品名称"
+                android:textSize="15dp"
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_woringproduct_l1"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/activity_woringproduct_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="报警数量"
+                android:textSize="15dp"
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_woringproduct_list1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/activity_woringproduct_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="   报警设备"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorMain"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        />
+
+    <ListView
+        android:id="@+id/activity_woringproduct_list2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        />
+</LinearLayout>

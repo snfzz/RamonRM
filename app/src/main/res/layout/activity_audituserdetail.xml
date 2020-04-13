@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_audituserdetail_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_audituserdetail_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="用户审核"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="用户名:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/activity_audituserdetail_txtdaima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="姓    名:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_audituserdetail_lblxingming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="身份证:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_audituserdetail_lblidcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="性    别:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_audituserdetail_lblsex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="手机号:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_audituserdetail_lblphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="邮    箱:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_audituserdetail_lblemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="部    门:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/activity_audituserdetail_lblbmmingcheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_height="26dp"
+            android:layout_width="26dp"
+            android:src="@mipmap/name"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="说    明:"
+            android:textColor="@color/colorTitleMain"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/activity_audituserdetail_lblbz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/edittext_rectbackground"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitleHint"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_audituserdetail_btnTongGuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_selector"
+        android:text="通过"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/activity_audituserdetail_btnHuiTui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_return_selector"
+        android:text="退回"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+</LinearLayout>

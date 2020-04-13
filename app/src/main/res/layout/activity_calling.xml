@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".video.CallingActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_calling_rlaycreateroom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/activity_calling_imgjieting"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="60dp"
+            app:srcCompat="@mipmap/jieting" />
+
+        <TextView
+            android:id="@+id/activity_calling_lblname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="65dp"
+            android:text="admin-123"
+            android:textColor="@color/colorTitle"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_calling_lblinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="65dp"
+            android:text="邀请你进行视频通话"
+            android:textColor="@color/colorTitle" />
+
+        <ImageView
+            android:id="@+id/activity_calling_imgheader"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@mipmap/user" />
+
+        <ImageView
+            android:id="@+id/activity_calling_imgjujue"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="60dp"
+            app:srcCompat="@mipmap/jujie" />
+
+        <TextView
+            android:id="@+id/activity_calling_lbljujue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="30dp"
+            android:text="接听"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/activity_calling_lbljieting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginBottom="30dp"
+            android:text="挂断"
+            android:textColor="@color/colorTitle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_calling_rlayroom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ramon.ramonrm.video.videolayout.TRTCVideoLayoutManager
+            android:id="@+id/trtc_video_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

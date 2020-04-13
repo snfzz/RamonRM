@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/listitem_anliinfo_lychanpinmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lblchanpinmctitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="产品名称："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lblchanpinmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_anliinfo_lblchanpinmctitle"
+            android:textColor="@color/colorTitle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_anliinfo_lywentims"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lblwentimstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="问题描述："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lblwentims"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_anliinfo_lblwentimstitle"
+            android:textColor="@color/colorTitle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_anliinfo_lychulics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lblchulicstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="处理措施："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lblchulics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/listitem_anliinfo_lblchulicstitle"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_anliinfo_lydianpingcs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/listitem_anliinfo_lbldianpingcs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorTitleHint" />
+
+</LinearLayout>

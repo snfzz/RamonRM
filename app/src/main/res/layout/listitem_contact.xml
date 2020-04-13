@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/listitem_contact_imgheader"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/head_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/listitem_contact_imgphonecall"
+            android:layout_toEndOf="@+id/listitem_contact_imgheader"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/listitem_contact_lbldpet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="部门"
+                android:textColor="@color/colorTitleHint"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/listitem_contact_lblname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="名称"
+                android:textColor="@color/colorTitle"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listitem_contact_lblphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电话"
+                android:textColor="@color/colorTitleHint" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/listitem_contact_imgphonecall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/listitem_contact_imgvideocall"
+            app:srcCompat="@mipmap/phonecall" />
+
+        <ImageView
+            android:id="@+id/listitem_contact_imgvideocall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@mipmap/videocall" />
+    </RelativeLayout>
+
+</LinearLayout>

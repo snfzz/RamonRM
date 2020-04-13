@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_anlidetail_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_anlidetail_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="案例详细"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblanlititle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="案例详细"
+            android:textColor="@color/colorTitleHint"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_anlidetail_imgdianping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/dianping" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_anlidetail_lychanpinmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblchanpinmctitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="产品名称："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblchanpinmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_anlidetail_lblchanpinmctitle"
+            android:textColor="@color/colorTitle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_anlidetail_lywentims"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblwentimstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="问题描述："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblwentims"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_anlidetail_lblwentimstitle"
+            android:textColor="@color/colorTitle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_anlidetail_lychulics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblchulicstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="处理措施："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lblchulics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/activity_anlidetail_lblchulicstitle"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_anlidetail_lydianpingcs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/activity_anlidetail_lbldianpingcs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="true" />
+
+    </RelativeLayout>
+</LinearLayout>

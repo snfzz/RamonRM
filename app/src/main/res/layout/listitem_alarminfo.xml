@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lykehumc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblkehumctitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="客户名称:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblkehumc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="客户名称"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lyguzhangmc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lykehumc"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangmctitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="故障名称:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="故障名称"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lyguzhangms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lyguzhangmc"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangmstitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="故障描述:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="故障描述"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lyguzhangyy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lyguzhangms"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangyytitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="故障原因:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangyy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="故障原因"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lyguzhangdj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lyguzhangyy"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangdjtitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="故障等级:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblguzhangdj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="故障等级"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lyliuhao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lyguzhangdj"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblliuhaotitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="流    号:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblliuhao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="流    号"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lychulics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lyliuhao"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblchulicstitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="处理措施:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblchulics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="处理措施"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lykaishisj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lychulics"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblkaishisjtitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="开始时间:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblkaishisj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listitem_alarminfo_lychixusj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_alarminfo_lykaishisj"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblchixusjtitle"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="持续时间:"
+            android:textColor="@color/colorSelected" />
+
+        <TextView
+            android:id="@+id/listitem_alarminfo_lblchixusj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="客户名称"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+</RelativeLayout>

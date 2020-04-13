@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".renyuan.BeiJianXiangXiActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_beijianguanli_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_beijianxiangxi_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <ImageButton
+            android:id="@+id/activity_beijianxiangxi_imgback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="备件详细"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_powerapply_ts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:text="备件详细"
+        android:textColor="@color/colorTitleHint"
+        />
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="编号:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+
+                />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:text="名称:"
+                android:textColor="#2D90C5"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="型号:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="初期数量:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="收获数量:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="入库:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+            z
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="出库:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            >
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@mipmap/name"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="期末数量:"
+                android:textSize="18dp"
+                android:textColor="#2D90C5"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:id="@+id/activity_beijianxiangxi_txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginLeft="1dp"
+                android:textColorHint="@color/colorTitleHint"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/LL_this"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/installationtask_dalog"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:shrinkColumns="1">
+
+            <TableRow>
+
+                <RelativeLayout
+                    android:id="@+id/showdalog_t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="全部任务"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/showdalog_t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="指派区域"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/showdalog_t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="完成"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/showdalog_t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="执行中"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/showdalog_photo"
+        android:layout_width="26sp"
+        android:layout_height="26sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/close" />
+
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_projectinfo_rlayprojinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lbltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务明细"
+            android:textColor="@color/colorUnSelected"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblhthtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lbltitle"
+            android:layout_marginTop="10dp"
+            android:text="合  同  号："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblhth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lbltitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lblhthtitle"
+            android:singleLine="true"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblkehumctitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblhthtitle"
+            android:layout_marginTop="10dp"
+            android:text="客户名称："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblkehumc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblhthtitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lblhthtitle"
+            android:singleLine="true"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblchanpinmctitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblkehumctitle"
+            android:layout_marginTop="10dp"
+            android:text="产品名称："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblchanpinmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblkehumctitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lblkehumctitle"
+            android:singleLine="true"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblquyujinglititle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblchanpinmc"
+            android:layout_marginTop="10dp"
+            android:text="区域经理："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblquyujingli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblchanpinmctitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lblchanpinmctitle"
+            android:singleLine="true"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblstatustitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblquyujinglititle"
+            android:layout_marginTop="10dp"
+            android:text="任务状态："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblquyujinglititle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lblquyujinglititle"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lbljiediantitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblstatustitle"
+            android:layout_marginTop="10dp"
+            android:text="节点统计："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lbljiedian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lblstatustitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lblstatustitle"
+            android:singleLine="true"
+            android:textColor="@color/colorTitle" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblneirongtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lbljiediantitle"
+            android:layout_marginTop="10dp"
+            android:text="详细内容："
+            android:textColor="@color/colorTitleMain" />
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblneirong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_projectinfo_lbljiediantitle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/fragment_projectinfo_lbljiediantitle"
+            android:maxLines="8"
+            android:minLines="1"
+            android:textColor="@color/colorTitle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_projectinfo_rlayshenhe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/fragment_projectinfo_lblshtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="审核列表"
+            android:textColor="@color/colorUnSelected"
+            android:textSize="16sp" />
+
+        <com.bin.david.form.core.SmartTable
+            android:id="@+id/fragment_projectinfo_stabresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragment_projectinfo_lblshtitle"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

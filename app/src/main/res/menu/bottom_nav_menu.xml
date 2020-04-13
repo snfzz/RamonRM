@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/pt_homegrey"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/pt_functiongrey"
+        android:title="功能" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@mipmap/pt_equipmentgrey"
+        android:title="设备" />
+
+    <item
+        android:id="@+id/navigation_news"
+        android:icon="@mipmap/pt_messagegrey"
+        android:title="消息"
+        />
+
+    <item
+        android:id="@+id/navigation_my"
+        android:icon="@mipmap/pt_mygrey"
+        android:title="我的"
+        />
+
+</menu>

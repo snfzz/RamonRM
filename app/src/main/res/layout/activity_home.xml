@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/activity_home_imgmenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/menu" />
+
+        <TextView
+            android:id="@+id/activity_home_lbltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_home_imglogo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/logo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_home_rymain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:ignore="NotSibling">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/activity_home_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-60dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_home_mitemhome"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="false"
+                app:selected_src="@mipmap/pt_homeblue"
+                app:src="@mipmap/pt_homegrey"
+                app:title="首页">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_home_mitemfunc"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="false"
+                app:selected_src="@mipmap/pt_functionblue"
+                app:src="@mipmap/pt_functiongrey"
+                app:title="功能">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_home_mitemdev"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="false"
+                app:selected_src="@mipmap/pt_equipmentblue"
+                app:src="@mipmap/pt_equipmentgrey"
+                app:title="设备">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_home_mitemmsg"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="false"
+                app:selected_src="@mipmap/pt_messageblue"
+                app:src="@mipmap/pt_messagegrey"
+                app:title="消息">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.ramon.ramonrm.controls.HomeMenuItem
+                android:id="@+id/activity_home_mitemmine"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:alpha="1"
+                app:ischecked="false"
+                app:selected_src="@mipmap/pt_myblue"
+                app:src="@mipmap/pt_mygrey"
+                app:title="我的">
+
+            </com.ramon.ramonrm.controls.HomeMenuItem>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/usual_dialog_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_onename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="XXXX"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/dialog_pickmulticolumn_lymain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/dialog_npicker1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30dp"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_oneno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/renyuananpai_selector"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="取消"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4" />
+
+            <Button
+                android:id="@+id/dialog_oneis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/renyuananpai_selector2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="确定"
+                android:textColor="#4CAF50"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

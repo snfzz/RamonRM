@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/listitem_devstatus_lymain">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/listitem_devstatus_imgalarm"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/listitem_devstatus_rltitle">
+
+                <TextView
+                    android:id="@+id/listitem_devstatus_lbltitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/listitem_devstatus_rltitle">
+
+                <TextView
+                    android:id="@+id/listitem_devstatus_lbldatatime"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorTitle" />
+
+                <TextView
+                    android:id="@+id/listitem_devstatus_lblnetstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorTitle" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/listitem_devstatus_lblbutton"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
